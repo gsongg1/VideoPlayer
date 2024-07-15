@@ -7,8 +7,8 @@ import { resolve } from 'path';
 import { rejects } from 'assert';
 
 const storage = new Storage();
-const rawVideoBucketName = "HV-raw-videos";
-const processedVideoBucketName = "HV-processed-videos";
+const rawVideoBucketName = "hv-raw-videos";
+const processedVideoBucketName = "hv-processed-videos";
 
 const localRawVideoPath = "./raw-videos";
 const localProcessedVideoPath= "./processed-videos";
