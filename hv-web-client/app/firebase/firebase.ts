@@ -2,8 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, User } from "firebase/auth";
-
-// Your web app's Firebase configuration
+import { getFunctions } from "firebase/functions";
+// Your wb app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyClrODKXjfcfdPr0AG0Rp_x9V3OTUK0RBc",
@@ -16,7 +16,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
+export const functions = getFunctions();
 
 
 //sign in with google popup
